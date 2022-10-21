@@ -2,8 +2,8 @@
 
 /*
 
-1. Do the following using `alert` function. When you find any square bracket
- replace that to the value of the variable.
+1. Do the following using `alert` function. When you find any square bracket"
+ replace "that to the value of the variable.
 
 */
 
@@ -16,6 +16,10 @@ let num2 = 32;
 - Alert `The value of num1 is [num1] and the value of num2 is [num2]`
 - Alert `The sum of [num1] and [num2] is [num1 + num1]`
 */
+  let language = "JavaScript";
+  alert (`I am learning ${language}`)
+  alert (`The value of num1 is ${num1} and the value of num2 is ${num2}`)
+  alert (`The sum of ${num1} and ${num2} is ${num1+num2}`)
 
 /*
 2. Do the following using `alert`, `prompt` and `confirm` and `console`
@@ -32,6 +36,15 @@ let num2 = 32;
     Adult: [isAdult]
     Profession: [userProfession]` (it should be in three different lines)
 */
+   
+    let userName = prompt ("Enter your username");
+    let userProfession = prompt("What is your profession?");
+    let isAdult = confirm("Are you an adult");
+    alert (`I am ${userName} a ${userProfession}`);
+    console.log (`I am ${userName} a ${userProfession}`);
+    alert (`Username: ${userName} \n Adult: ${isAdult} \n profession: ${userProfession}`);
+    console.log (`Username: ${userName} \n Adult: ${isAdult} \n profession: ${userProfession}`);
+
 
 /*
 . Addition using prompt
@@ -43,3 +56,10 @@ let num2 = 32;
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
+   let numA = prompt ("Enter your first number")
+   let numB = prompt ("Enter your second number")
+   alert (` sum of both numbers ${Number(numA)+Number(numB)}`) 
+   alert (` differnce ${(numA)-(numB)}`) 
+   alert (` product ${(numA)*(numB)}`) 
+   console.log (`${(numA)-(numB)}`)
+   console.log (` sum of both numbers ${Number(numA)+Number(numB)}`) 
