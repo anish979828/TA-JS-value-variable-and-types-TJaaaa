@@ -14,7 +14,7 @@ let num2 = 32;
 - Create a variable named `language` and store the value of `JavaScript` in it
 - Alert message saying `I am learning [language]`
 - Alert `The value of num1 is [num1] and the value of num2 is [num2]`
-- Alert `The sum of [num1] and [num2] is [num1 + num1]`
+- Alert `The sum of [num1] and [num2] is [num1 + num2]`
 */
   let language = "JavaScript";
   alert (`I am learning ${language}`)
@@ -24,7 +24,7 @@ let num2 = 32;
 /*
 2. Do the following using `alert`, `prompt` and `confirm` and `console`
 
-  - Using prompt accept the name of the user and store it a variable names `userName`
+  - Using prompt accept the name of the user and store it as a variable names `userName`
   - Using prompt accept the profession of the user and store it a variable names`userProfession`
   - Using confirm check if user is adult or not and store the value in `isAdult`
   - Alert message `I am [userName] a [userProfession]`
