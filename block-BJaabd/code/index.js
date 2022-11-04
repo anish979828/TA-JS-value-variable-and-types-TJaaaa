@@ -155,6 +155,10 @@ switch (true){
   case (marks<=30):
     alert ("FF")
   break;
+  default :
+    alert (`Just a Sheet of Marks can't decide your future`)
+
+
 }
 
 
@@ -196,7 +200,7 @@ else{
 
 
   ⛑ Rule
-    * [ ] While substracting and dividing keep in mind the number one should be greater then number two. If not show alert saying `Number Two is larger then Number one`.
+    * [ ] While substracting and dividing keep in mind the number one should be greater then number two. If not show alert saying `Number Two is larger than Number one`.
   ⚡️ Operations
     * [ ] Add
     * [ ] Sub
@@ -205,36 +209,32 @@ else{
 */
 
 // [Your code goes here]
-let x = Number(prompt("enter the  1st number"));
-let y = Number(prompt("enter the  2nd number"));
+let firstnum = +prompt ("Enter a number")
+let secondnum = +prompt ("Enter another number")
+let operation = prompt ("Choose your operation out of (Add, Sub, Mul, Div)")
 
-let calc = prompt("enter the operation (+, -, *, /)");
-
-switch (calc) {
-
-  case "+":
-    alert(`sum of 1st number and 2nd number is ${x+y}`);
+switch(operation){
+  case "Add": 
+    alert (`The Sum of ${firstnum} and ${secondnum} is ${firstnum+secondnum}`)
     break;
-  case "-":
-    if(y > x){
-      alert(`Number Two is larger then Number one`);
-    }  
-    else{
-      alert(`subtraction from 1st number to 2nd num is ${x-y}`);
-    }
-    break;
-    case "*":
-      alert(`sum of 1st number and 2nd number is ${x*y}`);
-      break; 
-      case "/":
-        if(y > x){
-          alert(`Number Two is larger then Number one`);
-        }  
-        else{
-          alert(`subtraction from 1st number to 2nd num is ${x/y}`);
-        }
-        break;     
-  default:
-    alert(`Enter valid operation`);
-    break;
+  case "Sub":
+     if (firstnum > secondnum ){
+      alert (`The difference between ${firstnum} from ${secondnum} is ${firstnum-secondnum}`)
+     } else if (firstnum<secondnum){
+      alert (`Number Two is larger than Number one`)
+     }
+     break;
+  case "Mul":
+      alert (`The product of ${firstnum} and ${secondnum} is ${firstnum*secondnum}`) 
+     break;
+  case "Div":
+      if (firstnum > secondnum ){
+       alert (`The division of  ${firstnum} to ${secondnum} is ${firstnum/secondnum}`)
+      } else if (firstnum<secondnum){
+       alert (`Number Two is larger than Number one`)
+      }
+      break;
+  default :
+       alert (`Enter a valid value`)         
 }
+
